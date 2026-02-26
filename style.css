@@ -1,0 +1,118 @@
+:root {
+  --sarcelle: #0f766e;
+  --sarcelle-clair: #14b8a6;
+  --fond: #f0fdfa;
+  --blanc: #ffffff;
+  --ombre: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e6fffa, #ccfbf1);
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, var(--sarcelle), var(--sarcelle-clair));
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px var(--ombre);
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 900px;
+  margin: -40px auto 0;
+  padding: 40px;
+  background: var(--blanc);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--ombre);
+  text-align: center;
+}
+
+.bio {
+  font-size: 1.15em;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--ombre);
+}
+
+.social-links a i {
+  font-size: 1.2em;
+}
+
+/* Couleurs officielles */
+
+.x { background: #000000; }
+.bluesky { background: #1DA1F2; }
+.tiktok { background: #000000; }
+.github { background: #181717; }
+.twitch { background: #9146FF; }
+.site { background: var(--sarcelle); }
+.youtube { background: #FF0000; }
+.gamebanana { background: #fcdc00; color: #000; }
+.reddit { background: #FF4500; }
+
+.social-links a:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9em;
+  color: #475569;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  .container {
+    padding: 25px;
+  }
+}
